@@ -213,7 +213,7 @@
 
       .hero h1 {
         font-family: 'Inter Tight', sans-serif;
-        font-size: clamp(3.5rem, 8vw, 6.25rem);
+        font-size: clamp(2.5rem, 8vw, 6.25rem);
         font-weight: 800;
         line-height: 1.1;
         letter-spacing: -0.02em;
@@ -229,6 +229,20 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
+      }
+      
+      /* Email button specific styles */
+      .email-button {
+        word-break: break-word;
+        display: inline-block;
+        max-width: 100%;
+      }
+      
+      @media (max-width: 768px) {
+        .email-button {
+          font-size: 0.9rem !important;
+          padding: 0.8rem 1.5rem !important;
+        }
       }
 
       .hero-subtitle {
@@ -457,11 +471,11 @@
         }
 
         .hero h1 {
-          font-size: 3rem;
+          font-size: 2.5rem;
         }
 
         .hero-subtitle {
-          font-size: 1.125rem;
+          font-size: 1rem;
         }
 
         .features-grid {
@@ -470,6 +484,71 @@
 
         .feature-visual {
           min-height: 300px;
+        }
+        
+        /* Mobile button adjustments */
+        .cta-button {
+          padding: 0.6rem 1.5rem;
+          font-size: 0.9rem;
+        }
+        
+        .secondary-button {
+          padding: 0.6rem 1.5rem;
+          font-size: 0.9rem;
+        }
+        
+        /* Mobile logo */
+        .logo img {
+          height: 32px;
+        }
+        
+        /* Mobile nav container */
+        .nav-container {
+          padding: 0 1rem;
+        }
+        
+        /* Mobile hello message */
+        .hello-message {
+          font-size: 2.5rem;
+        }
+        
+        /* Mobile section padding */
+        section {
+          padding: 4rem 1rem !important;
+        }
+        
+        /* Mobile contact section */
+        #contact div[style*="max-width: 600px"] {
+          padding: 2rem !important;
+        }
+        
+        #contact p[style*="font-size: 1.25rem"] {
+          font-size: 1rem !important;
+        }
+        
+        /* Mobile about section */
+        #features div[style*="max-width: 800px"] {
+          padding: 2rem !important;
+        }
+        
+        #features p[style*="font-size: 1.25rem"] {
+          font-size: 1rem !important;
+        }
+        
+        /* Mobile footer */
+        .footer-content {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+        
+        /* Service cards on mobile */
+        .services-grid {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+        
+        .service-card {
+          padding: 2rem;
         }
       }
 
@@ -885,7 +964,7 @@
           </p>
           <a
             href="mailto:info@agentis.solutions"
-            class="cta-button"
+            class="cta-button email-button"
             style="font-size: 1.125rem; padding: 1rem 3rem"
           >
             info@agentis.solutions
