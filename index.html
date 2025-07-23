@@ -336,7 +336,7 @@
       /* Features Section */
       #features {
         padding: 6rem 2rem;
-        background: var(--primary-bg);
+        background: transparent;
         position: relative;
         z-index: 1;
       }
@@ -782,7 +782,7 @@
     <!-- About Section -->
     <section
       id="about"
-      style="padding: 6rem 2rem; background: var(--secondary-bg)"
+      style="padding: 6rem 2rem; background: transparent; position: relative; z-index: 1;"
     ></section>
 
     <!-- Features Section -->
@@ -794,7 +794,7 @@
             Building the infrastructure for autonomous intelligence
           </p>
         </div>
-        <div style="max-width: 800px; margin: 0 auto; text-align: center">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center; background: rgba(0, 0, 0, 0.7); padding: 3rem; border-radius: 20px; backdrop-filter: blur(10px); border: 1px solid var(--border-color);">
           <p
             style="
               font-size: 1.25rem;
@@ -828,8 +828,11 @@
       id="contact"
       style="
         padding: 6rem 2rem;
-        background: var(--secondary-bg);
+        background: rgba(10, 10, 10, 0.9);
         text-align: center;
+        position: relative;
+        z-index: 1;
+        backdrop-filter: blur(10px);
       "
     >
       <div class="section-container">
@@ -839,7 +842,7 @@
             Ready to save hours with custom AI solutions?
           </p>
         </div>
-        <div style="max-width: 600px; margin: 0 auto">
+        <div style="max-width: 600px; margin: 0 auto; background: rgba(124, 58, 237, 0.05); padding: 3rem; border-radius: 20px; border: 1px solid rgba(124, 58, 237, 0.2);">
           <p
             style="
               font-size: 1.25rem;
